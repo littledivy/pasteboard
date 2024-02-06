@@ -1,0 +1,5 @@
+{
+  "name": "@divy/pasteboard",
+  "version": "0.0.1",
+  "exports": "./pasteboard.ts"
+}

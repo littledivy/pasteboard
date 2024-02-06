@@ -5,23 +5,19 @@ macOS NSPasteboard API bindings for Deno JIT FFI.
 ### Usage
 
 ```typescript
-import { OSXPasteboard } from "https://deno.land/x/pasteboard/mod.ts";
+import { OSXPasteboard } from "jsr:@divy/pasteboard";
 
-// Retrieves the default pasteboard.
 const board = new OSXPasteboard();
 
-// Clears the pasteboard contents.
-board.clearContents();
+board.clearContents(); // Clears the pasteboard contents.
 
-// Write UTF-8 encoded text to the pasteboard.
-board.writeText("Hello World!");
+board.writeText("Hello World!"); // Write UTF-8 encoded text to the pasteboard.
 
-// Read UTF-8 encoded text from the pasteboard.
 const text = board.readText();
 ```
 
 ```
-deno run --allow-ffi --unstable example.ts
+deno run --allow-ffi --unstable-ffi example.ts
 ```
 
 ### Design
