@@ -12,8 +12,6 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-/// <reference lib="deno.unstable" />
-
 export const { symbols: C } = Deno.dlopen("/usr/lib/libobjc.A.dylib", {
   objc_msgSend: {
     parameters: ["pointer", "pointer"],
